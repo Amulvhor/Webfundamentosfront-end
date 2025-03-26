@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit content</title>
+
+    <style>
+
+        body{
+            margin-bottom: 500px;
+        }
+        .container{
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            margin-bottom: 16px;
+            height: 300px;
+            background-color: rgba(255,0,0, .5);
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .fit-content .item{
+            width: fit-content;
+        }
+
+        .min-content{
+            width: min-content;
+        }
+
+        .max-content .item{
+            width: max-content;
+        }
+
+        .overflow-hidden{
+            overflow: hidden;
+        }
+
+        .overflow-scroll{
+            overflow:scroll ;
+        }
+
+        .overflow-auto{
+            overflow: auto;
+        }
+
+        .overflow-x-hidden{
+            overflow-x: hidden;
+        }
+
+        .overflow-y-hidden{
+            overflow-y: hidden;
+        }
+
+        .overflow-x-scroll{
+            overflow-x: scroll;
+        }
+
+        .overflow-visible{
+            overflow: visible;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container fit-content overflow-auto">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, eaque.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt voluptas dolores vel enim reprehenderit hic magnam eos sit animi deserunt, minima dignissimos maiores blanditiis similique?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium suscipit, alias fuga pariatur quam ea dolorem possimus ut nulla illo dicta deleniti dolorum iste qui voluptatum delectus saepe voluptate omnis quaerat unde! Officia corporis, saepe, natus, iste facilis inventore esse impedit autem in harum nemo sunt velit cupiditate quia sint fugiat doloribus explicabo dolores quaerat commodi temporibus. Expedita a aperiam suscipit. Dicta soluta harum iure aut! Adipisci natus iusto molestias velit assumenda laborum repellat ratione.</div>
+    </div>
+
+    <div class="container min-content overflow-scroll">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, eaque.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt voluptas dolores vel enim reprehenderit hic magnam eos sit animi deserunt, minima dignissimos maiores blanditiis similique?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium suscipit, alias fuga pariatur quam ea dolorem possimus ut nulla illo dicta deleniti dolorum iste qui voluptatum delectus saepe voluptate omnis quaerat unde! Officia corporis, saepe, natus, iste facilis inventore esse impedit autem in harum nemo sunt velit cupiditate quia sint fugiat doloribus explicabo dolores quaerat commodi temporibus. Expedita a aperiam suscipit. Dicta soluta harum iure aut! Adipisci natus iusto molestias velit assumenda laborum repellat ratione.</div>
+    </div>
+
+    <div class="container max-content overflow-auto">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, eaque.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt voluptas dolores vel enim reprehenderit hic magnam eos sit animi deserunt, minima dignissimos maiores blanditiis similique?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium suscipit, alias fuga pariatur quam ea dolorem possimus ut nulla illo dicta deleniti dolorum iste qui voluptatum delectus saepe voluptate omnis quaerat unde! Officia corporis, saepe, natus, iste facilis inventore esse impedit autem in harum nemo sunt velit cupiditate quia sint fugiat doloribus explicabo dolores quaerat commodi temporibus. Expedita a aperiam suscipit. Dicta soluta harum iure aut! Adipisci natus iusto molestias velit assumenda laborum repellat ratione.</div>
+    </div>
+    
+</body>
+</html>
